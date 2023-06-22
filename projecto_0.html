@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <style>
+            body{margin: 0;
+                 padding:20px;
+                 background-color: rgb(31, 31, 37);
+            
+            }
+
+            h1{
+                font-size: medium;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: bisque;
+            }
+            #as{
+                text-align: right;
+            }
+            #search{
+                border:none;
+                outline: none;
+                background-color: #535151;
+                color:azure;
+                position:absolute;
+                width: 400px;
+                height: 10px;
+                left:463px;
+                top:300px;
+                margin-top: 15px;
+                z-index: 2;
+                border-radius: 50px;
+                
+        
+
+            }
+            #searchb{
+                border: none;
+                position:absolute;
+                left:444px;
+                top:60%;
+                
+                width: 150px;
+                height:50px;
+                background-color: #383232;
+                color:azure;
+                cursor: pointer;
+                border-radius: 5px;
+                
+                
+                
+
+            }
+            #searchb:hover{
+                box-shadow: 0 1px 30px 0 gray;
+
+            }
+            #imag{
+                width: 500px;
+                height: 200px;
+                position:absolute;
+                left:420px;
+                top:15%;
+                
+            }
+            #as{
+                color:azure;
+                text-decoration: none;
+                cursor: pointer;
+                font-size: 16px;
+                
+                
+                
+            }
+            #gm{
+                text-decoration: none;
+                cursor: pointer;
+            }
+            #menu{
+                cursor: pointer;
+            }
+            #ini{
+                cursor:pointer;
+            }
+            header{
+                width:100%;
+                height: 60px;
+                position: absolute;
+                top:0;
+            }
+            header>nav{
+                display:flex;
+                justify-content: flex-end;
+            }
+            .risect{
+                width:300px;
+                height: auto;
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                align-items: center;
+                margin-right: 16px;
+
+            }
+            .risect>li>a{
+                margin-right: 16px;
+                color:azure;
+            }
+            
+            .risect li:nth-child(4) input{
+                background-color:blue;
+                color:azure;
+                width: 118px;
+                height: 36px;
+                border:none;
+                border-radius: 4px;
+
+                
+            }
+            #suerte{
+                border: none;
+                position: absolute;
+                top:60%;
+                left:730px;
+                width: 150px;
+                height:50px;
+                background-color: #383232;
+                color:azure;
+                cursor: pointer;
+                border-radius: 5px;
+                
+                
+
+                
+                
+            }
+            .risect li:nth-child(4) input:hover{ 
+                cursor: pointer;
+                background-color:aquamarine ;
+
+            }
+            #lupa{
+                position:absolute;
+                top:311px;
+                left:429px;
+                margin-left: 10px;
+                
+                z-index: 2;
+                
+            }
+            #ofgo{
+                color:azure;
+                margin-left: 481px;
+                position: absolute;
+                top:70%;  
+            }
+            .risect li:nth-child(3) a:hover{
+                box-shadow:0px 1px 10px 0px gray;
+                border-radius: 50px;
+            }
+            #as:hover{
+                text-decoration: underline;
+            }
+            #gm:hover{
+                text-decoration: underline;
+            }
+            #barrafalse{
+                border:none;
+                outline: none;
+                background-color: #535151;
+                color:azure;
+                position:absolute;
+                width: 500px;
+                height: 30px;
+                left:420px;
+                top:300px;
+                z-index: 1;
+                border-radius: 50px;
+
+            }
+            #sombra{
+                
+                position:absolute;
+                width: 500px;
+                height: 30px;
+                left:420px;
+                top:300px;
+                z-index: 1;
+                border-radius: 50px;
+
+            }
+            #sombra:hover{
+                box-shadow: 0 1px 6px 0 gray;
+            }
+            #suerte:hover{
+                box-shadow: 0 1px 30px 0 gray;
+
+            }
+            main{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #reg{
+                width: 100%;
+                height: 25px;
+                position: absolute;
+                top:520px;
+                left:0;
+                background-color: #1f1c1c;
+                font-size: 20px;
+                color: rgb(174, 179, 179);
+                padding: 10px;
+                padding-left: 30px;
+                
+            }
+           .misc{
+            width: 100%;
+            height: 35px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color:#1f1c1c ;
+            border: 5px;
+            border-color: #535151;
+            
+           }
+           .misc>a {
+            text-decoration: none;
+            color: rgb(174, 179, 179);
+            padding-right: 20px;
+            margin-left: 20px;
+           }
+           .misc>a:hover{
+            cursor: pointer;
+            text-decoration: underline;
+           }
+           #pv,cond, pref{
+            margin-left: 300px;
+
+           }
+
+           
+
+
+
+        </style>
+        <title>busqueda</title>
+    </head>
+    <body>
+        <header>
+            <nav><ul class="risect">
+                <li> <a href="index_imagenes.html" id="as">buscar imagenes</a> </li>
+                <li><a href="" id="gm">gmail</a></li>
+                <li><a href="" id="menu"> <i class="bi bi-grid-3x3-gap-fill"></i> </a></li>
+                <li><a href="" id="ini"><input type="submit" Value="iniciar sesion"></a></li>
+            </ul></nav>
+            
+          
+        </header>
+        
+        <main>
+            <section>
+                <div id="botoncitos">
+                    <form action="https://www.google.com/search">
+
+                    <input type="text"  id="search"   name="q">
+                    <input type="submit" id="searchb" value="buscar con google">
+                    
+                </form>
+                <form action="https://www.google.com/search">
+                    <input type="hidden"  name="btnl" id="btnl" value="Voy+a+tener+suerte">
+                    <input type="hidden"  name="hl" id="hl" value="es">
+                    <input type="hidden"  name="sxsrf" id="sxsrf" value="AP">
+                    <input type="submit" id="suerte" Value="voy a tener suerte">
+                    <span id="lupa"><i class="bi bi-search"></i></span>
+                </form>
+                <input type="text" id="barrafalse"> 
+                
+                
+
+                </div>
+                <div id="sombra"></div>
+                
+                    
+        
+                
+            </section>
+            <div>
+                <span id="ofgo">ofrecido por gooogle en <a href="">español(latinoamerica)</a></span>
+            </div>
+
+            <section>
+                <img src="doodle.gif" id="imag" alt="google" >
+            </section>
+        </main>
+
+        <footer>
+            <section><div id="reg">Colombia</div></section>
+            <section>
+                <div class="misc">
+                    
+                    <a href=""  id="sg">Sobre Google </a>
+                    <a href="" id="pb">Publicidad</a>
+                    <a href="" id="bs">Negocios</a>
+                    <a href="" id="cflb">Como funciona la busqueda</a>
+                    
+                    
+                    <a href="" id="pv">Privacidad</a>
+                    <a href="" id="cond">Condiciones</a>
+                    <a href="" id="pref">Preferencias</a>
+                </div>
+                
+            </section>
+        </footer>
+            
+        
+        
+       
+       
+        
+    
+    </body>
+</html>

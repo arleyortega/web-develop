@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            #sear{
+                text-align: right;
+                text-decoration: none;
+                color:azure;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #bscd{
+                position: absolute;
+                top:50%;
+                left:40%;
+                width: 400px;
+                height: 40px;
+                border-radius: 50px;
+            }
+            #su{
+                position:absolute;
+                top:60%;
+                left:50%;
+                height: 40px;
+            }
+            #mls{
+                position:absolute;
+                top : 15%;
+                left: 40%;
+                width: 500px;
+                height: 200px;
+
+            }
+            
+        </style>
+        <title>imagenes</title>
+    </head>
+    <body>
+       <a href="projecto_0.html" id="sear"><h2>busqueda normal</h2></a> 
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" id="bscd" placeholder="buscar imagenes" name="q">
+            <input type="hidden" name="hl" id="hl" value="es">
+            <input type="hidden"   name="tbm" id="tbm" value="isch">
+            <input type="hidden"   name="sxsrf" id="sxsrf" value="AP">
+
+            <input type="submit" id="su" Value="buscar">
+            
+        </form>
+        <img src="goo.jpg" alt="google imagenes" id="mls">
+    </body>
+</html>
